@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photografirst</title>
+
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- JavaScript Files -->
+    <script src="renderer.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <input
+        id="user"
+        class="input-field"
+        type="text"
+        placeholder="User Name"
+      />
+      <input
+        id="collection"
+        class="input-field"
+        type="text"
+        placeholder="Collection Name"
+      />
+      <div class="input-wrapper">
+        <input
+          id="dir"
+          class="input-field hidden"
+          type="file"
+          webkitdirectory
+        />
+      </div>
+      <button id="file-upload-button" class="action-button">
+        Select Folder
+      </button>
+      <!-- <input id="dir" class="input-field" type="file" webkitdirectory="" /> -->
+      <button id="runbtn" class="action-button">Run</button>
+      <div id="spinner" class="hidden">
+        <div class="loader"></div>
+        <text id="loading"> sample </text>
+      </div>
+      <button id="done" class="action-button" style="display: none">
+        Done
+      </button>
+    </div>
+  </body>
+</html>
